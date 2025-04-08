@@ -1,7 +1,12 @@
 site_name: FPGA Peripheral Board Documentation
 theme:
   name: material
-  logo: assets/logos/purdue_logo_dark.png
+  features:
+    - navigation.instant
+    - navigation.sections
+  logo: assets/logos/purdue_logo.svg
+  font:
+    text: Roboto
   palette:
     - scheme: purdue-dark
       toggle:
@@ -13,8 +18,6 @@ theme:
         name: Switch to dark mode
 extra_css:
   - stylesheets/extra.css
-extra_javascript:
-  - assets/custom.js
 remote_branch: gh-pages
 
 nav:

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="84.534935mm"
+   height="41.374771mm"
+   viewBox="0 0 84.534935 41.374771"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="purdue_logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.0467522"
+     inkscape:cx="116.55098"
+     inkscape:cy="125.62667"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-74.108224,-115.17259)">
+    <path
+       style="fill:#000000;stroke-width:0.264583"
+       d="m 75.828214,152.54629 1.71998,-4.0005 5.33052,-0.0684 5.33053,-0.0684 5.10791,-11.99657 c 2.80934,-6.59811 5.18212,-12.19658 5.27284,-12.44106 0.15373,-0.41433 -0.19212,-0.4445 -5.09643,-0.4445 -4.10619,0 -5.23399,-0.0697 -5.13677,-0.3175 0.0685,-0.17462 0.32045,-0.7747 0.55984,-1.3335 0.23939,-0.5588 0.97271,-2.2733 1.6296,-3.81 l 1.19434,-2.794 28.816486,-0.0739 c 30.14077,-0.0773 31.40446,-0.0396 34.25934,1.0224 2.36399,0.8794 3.82188,2.79863 3.82675,5.03769 0.005,2.0989 -2.54733,8.64468 -4.55621,11.687 -2.7759,4.20395 -5.735,6.12536 -11.57464,7.51568 -1.5116,0.35989 -4.04887,0.44452 -17.11305,0.57084 l -15.33831,0.1483 -1.35761,3.15103 c -0.74669,1.73306 -1.4238,3.35954 -1.50469,3.6144 -0.13869,0.43696 0.15531,0.46729 5.15661,0.53198 l 5.30368,0.0686 -1.66868,3.99674 -1.66869,3.99674 -20.106666,0.004 -20.10667,0.004 z m 59.645036,-20.26301 c 2.64165,-0.78448 4.8432,-3.24496 5.07656,-5.67361 0.10549,-1.09783 0.0344,-1.32638 -0.65139,-2.0941 l -0.7698,-0.86178 -10.77278,-0.0713 -10.77277,-0.0713 -1.60325,3.75432 c -0.88179,2.06488 -1.76003,4.1258 -1.95166,4.57982 l -0.34841,0.8255 h 10.2443 c 8.44302,0 10.47375,-0.0681 11.5492,-0.38751 z"
+       id="path1" />
+  </g>
+</svg>
