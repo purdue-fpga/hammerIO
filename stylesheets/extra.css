@@ -1,5 +1,6 @@
 /* Purdue Dark Theme */
 [data-md-color-scheme="purdue-dark"] {
+  color-scheme: dark;
   --md-primary-fg-color: #CEB888;
   /* Purdue Gold */
   --md-primary-bg-color: #000000;
@@ -23,6 +24,7 @@
 
 /* Purdue Light Theme */
 [data-md-color-scheme="purdue-light"] {
+  color-scheme: light;
   --md-primary-fg-color: #CEB888;
   /* Boilermaker Gold for header */
   --md-primary-bg-color: #F6F6F6;
@@ -127,23 +129,23 @@
 
 
 /* Purdue Dark Theme - Site Name (Header) */
-[data-md-color-scheme="purdue-dark"] .md-header__brand {
-  color: #CEB888 !important;
-  /* Purdue Gold */
+[data-md-color-scheme="purdue-dark"] .md-header {
+  color: #1A1A1A;
 }
 
 /* Purdue Light Theme - Site Name (Header) */
-[data-md-color-scheme="purdue-light"] .md-header__brand {
-  color: #1A1A1A !important;
-  /* Dark gray for better contrast in light mode */
+[data-md-color-scheme="purdue-light"] .md-header {
+  color: #FFFFFF;
 }
 
-/* Hide the light logo in dark mode */
-[data-md-color-scheme="purdue-dark"] .md-header__brand img.light-logo {
-  display: none;
+/* Default to dark mode logo (black logo for dark mode) */
+[data-md-color-scheme="purdue-dark"] .md-header__button.md-logo {
+  filter: brightness(10.2%);
+  /* Black logo for dark mode */
 }
 
-/* Hide the dark logo in light mode */
-[data-md-color-scheme="purdue-light"] .md-header__brand img.dark-logo {
-  display: none;
+/* Light mode logo (white logo for light mode) */
+[data-md-color-scheme="purdue-light"] .md-header__button.md-logo {
+  filter: brightness(0) invert(1);
+  /* White logo for light mode */
 }
