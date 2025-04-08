@@ -1,0 +1,21 @@
+/* Light mode customizations */
+[data-md-color-scheme="default"] {
+    --md-primary-fg-color:          #CFB991; /* Boilermaker Gold */
+    --md-primary-fg-color--light:   #EBD99F; /* Dust */
+    --md-primary-fg-color--dark:    #8E6F3E; /* Aged */
+    --md-accent-fg-color:           #DAAA00; /* Rush */
+    --md-accent-fg-color--light:    #DDB945; /* Field */
+    --md-accent-fg-color--dark:     #8E6F3E; /* Aged */
+    --md-typeset-a-color:           #000000; /* Black for links */
+  }
+  
+  /* Dark mode customizations */
+  [data-md-color-scheme="slate"] {
+    --md-primary-fg-color:          #CFB991; /* Boilermaker Gold */
+    --md-primary-fg-color--light:   #DDB945; /* Field */
+    --md-primary-fg-color--dark:    #8E6F3E; /* Aged */
+    --md-accent-fg-color:           #DAAA00; /* Rush */
+    --md-accent-fg-color--light:    #EBD99F; /* Dust */
+    --md-accent-fg-color--dark:     #8E6F3E; /* Aged */
+    --md-typeset-a-color:           #EBD99F; /* Dust for links */
+  }

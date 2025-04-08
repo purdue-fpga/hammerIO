@@ -1,3 +1,16 @@
 site_name: FPGA Peripheral Board Documentation
 theme:
-  name: material
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+    - scheme: slate
+      primary: custom
+      accent: custom
+
+nav:
+  - Home: index.md
+  - About: about.md
+
+extra_css:
+  - stylesheets/extra.css
