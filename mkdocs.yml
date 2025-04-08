@@ -1,16 +1,21 @@
 site_name: FPGA Peripheral Board Documentation
 theme:
+  name: material
+  logo: assets/logos/purdue_logo_dark.png
   palette:
-    - scheme: default
-      primary: custom
-      accent: custom
-    - scheme: slate
-      primary: custom
-      accent: custom
+    - scheme: purdue-dark
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    - scheme: purdue-light
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - assets/custom.js
 
 nav:
   - Home: index.md
   - About: about.md
-
-extra_css:
-  - stylesheets/extra.css

@@ -1,0 +1,5 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,  // Set your preferred tab size (e.g., 2 or 4 spaces)
+  "editor.insertSpaces": true  // Ensure spaces instead of tabs for indentation
+}

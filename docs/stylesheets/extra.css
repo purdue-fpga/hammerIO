@@ -1,21 +1,149 @@
-/* Light mode customizations */
-[data-md-color-scheme="default"] {
-    --md-primary-fg-color:          #CFB991; /* Boilermaker Gold */
-    --md-primary-fg-color--light:   #EBD99F; /* Dust */
-    --md-primary-fg-color--dark:    #8E6F3E; /* Aged */
-    --md-accent-fg-color:           #DAAA00; /* Rush */
-    --md-accent-fg-color--light:    #DDB945; /* Field */
-    --md-accent-fg-color--dark:     #8E6F3E; /* Aged */
-    --md-typeset-a-color:           #000000; /* Black for links */
-  }
-  
-  /* Dark mode customizations */
-  [data-md-color-scheme="slate"] {
-    --md-primary-fg-color:          #CFB991; /* Boilermaker Gold */
-    --md-primary-fg-color--light:   #DDB945; /* Field */
-    --md-primary-fg-color--dark:    #8E6F3E; /* Aged */
-    --md-accent-fg-color:           #DAAA00; /* Rush */
-    --md-accent-fg-color--light:    #EBD99F; /* Dust */
-    --md-accent-fg-color--dark:     #8E6F3E; /* Aged */
-    --md-typeset-a-color:           #EBD99F; /* Dust for links */
-  }
+/* Purdue Dark Theme */
+[data-md-color-scheme="purdue-dark"] {
+  --md-primary-fg-color: #CEB888;
+  /* Purdue Gold */
+  --md-primary-bg-color: #000000;
+  /* Dark background for nav bar */
+  --md-accent-fg-color: #B5A66A;
+  --md-default-bg-color: #121212;
+  /* Dark mode background */
+  --md-default-fg-color: #E0E0E0;
+  /* Light text color */
+  --md-typeset-color: #E8E6E3;
+  /* Light text color for body */
+  --md-typeset-a-color: #CFB991;
+  /* Link color in dark mode */
+  --md-typeset-heading-color: #CEB888;
+  /* Light color for headings */
+  --md-code-bg-color: #1E1E1E;
+  --md-code-fg-color: #FFFBCC;
+  --md-footer-bg-color: #000000;
+  --md-footer-fg-color: #CEB888;
+}
+
+/* Purdue Light Theme */
+[data-md-color-scheme="purdue-light"] {
+  --md-primary-fg-color: #CEB888;
+  /* Boilermaker Gold for header */
+  --md-primary-bg-color: #F6F6F6;
+  /* Light background for nav bar */
+  --md-accent-fg-color: #B5A66A;
+  --md-default-bg-color: #FFFFFF;
+  /* Light mode background */
+  --md-default-fg-color: #1A1A1A;
+  /* Dark text color */
+  --md-typeset-color: #1A1A1A;
+  /* Dark text color for body */
+  --md-typeset-a-color: #B1810B;
+  /* Link color in light mode */
+  --md-typeset-heading-color: #1A1A1A;
+  /* Dark color for headings */
+  --md-code-bg-color: #F0F0F0;
+  --md-code-fg-color: #2D2D2D;
+  --md-footer-bg-color: #F6F6F6;
+  --md-footer-fg-color: #1A1A1A;
+}
+
+/* Logo color for Purdue Dark */
+[data-md-color-scheme="purdue-dark"] .md-header .md-header-nav__brand {
+  color: #CEB888;
+  /* Purdue Gold */
+}
+
+/* Logo color for Purdue Light */
+[data-md-color-scheme="purdue-light"] .md-header .md-header-nav__brand {
+  color: #CEB888;
+  /* Boilermaker Gold for light mode as well */
+}
+
+/* Syntax Highlighting for Dark Mode */
+[data-md-color-scheme="purdue-dark"] pre {
+  background-color: #1E1E1E;
+  color: #FFFBCC;
+}
+
+[data-md-color-scheme="purdue-dark"] code {
+  color: #FFFBCC;
+}
+
+/* Syntax Highlighting for Light Mode */
+[data-md-color-scheme="purdue-light"] pre {
+  background-color: #F0F0F0;
+  color: #2D2D2D;
+}
+
+[data-md-color-scheme="purdue-light"] code {
+  color: #2D2D2D;
+}
+
+/* Footer Customization */
+[data-md-color-scheme="purdue-dark"] .md-footer {
+  background-color: #000000;
+  color: #CEB888;
+}
+
+[data-md-color-scheme="purdue-light"] .md-footer {
+  background-color: #F6F6F6;
+  color: #1A1A1A;
+}
+
+/* Purdue Dark Theme - Heading Text */
+[data-md-color-scheme="purdue-dark"] h1 {
+  color: #CEB888;
+  /* Boilermaker Gold */
+}
+
+/* Purdue Light Theme - Heading Text */
+[data-md-color-scheme="purdue-light"] h1 {
+  color: #1A1A1A;
+  /* Dark gray for better contrast */
+}
+
+/* Purdue Dark Theme - General Text */
+[data-md-color-scheme="purdue-dark"] p {
+  color: #E8E6E3;
+  /* Light text color for better contrast */
+}
+
+/* Purdue Light Theme - General Text */
+[data-md-color-scheme="purdue-light"] p {
+  color: #1A1A1A;
+  /* Dark text for readability */
+}
+
+/* Purdue Dark Theme - Secondary Headings */
+[data-md-color-scheme="purdue-dark"] h2,
+[data-md-color-scheme="purdue-dark"] h3 {
+  color: #CEB888;
+  /* Purdue Gold for secondary headings */
+}
+
+/* Purdue Light Theme - Secondary Headings */
+[data-md-color-scheme="purdue-light"] h2,
+[data-md-color-scheme="purdue-light"] h3 {
+  color: #1A1A1A;
+  /* Dark color for secondary headings */
+}
+
+
+/* Purdue Dark Theme - Site Name (Header) */
+[data-md-color-scheme="purdue-dark"] .md-header__brand {
+  color: #CEB888 !important;
+  /* Purdue Gold */
+}
+
+/* Purdue Light Theme - Site Name (Header) */
+[data-md-color-scheme="purdue-light"] .md-header__brand {
+  color: #1A1A1A !important;
+  /* Dark gray for better contrast in light mode */
+}
+
+/* Hide the light logo in dark mode */
+[data-md-color-scheme="purdue-dark"] .md-header__brand img.light-logo {
+  display: none;
+}
+
+/* Hide the dark logo in light mode */
+[data-md-color-scheme="purdue-light"] .md-header__brand img.dark-logo {
+  display: none;
+}
