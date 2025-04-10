@@ -49,13 +49,21 @@
 /* Logo color for Purdue Dark */
 [data-md-color-scheme="purdue-dark"] .md-header .md-header-nav__brand {
   color: #CEB888;
-  /* Purdue Gold */
 }
 
 /* Logo color for Purdue Light */
 [data-md-color-scheme="purdue-light"] .md-header .md-header-nav__brand {
   color: #CEB888;
-  /* Boilermaker Gold for light mode as well */
+}
+
+/* Nav Header color for Purdue Dark */
+[data-md-color-scheme="purdue-dark"] .md-nav__title {
+  color: #E0E0E0;
+}
+
+/* Nav Header color for Purdue Light */
+[data-md-color-scheme="purdue-light"] .md-nav__title {
+  color: #1a1a1a;
 }
 
 /* Syntax Highlighting for Dark Mode */
@@ -92,25 +100,21 @@
 /* Purdue Dark Theme - Heading Text */
 [data-md-color-scheme="purdue-dark"] h1 {
   color: #CEB888;
-  /* Boilermaker Gold */
 }
 
 /* Purdue Light Theme - Heading Text */
 [data-md-color-scheme="purdue-light"] h1 {
   color: #1A1A1A;
-  /* Dark gray for better contrast */
 }
 
 /* Purdue Dark Theme - General Text */
 [data-md-color-scheme="purdue-dark"] p {
   color: #E8E6E3;
-  /* Light text color for better contrast */
 }
 
 /* Purdue Light Theme - General Text */
 [data-md-color-scheme="purdue-light"] p {
   color: #1A1A1A;
-  /* Dark text for readability */
 }
 
 /* Purdue Dark Theme - Secondary Headings */
@@ -141,11 +145,9 @@
 /* Default to dark mode logo (black logo for dark mode) */
 [data-md-color-scheme="purdue-dark"] .md-header__button.md-logo {
   filter: brightness(10.2%);
-  /* Black logo for dark mode */
 }
 
 /* Light mode logo (white logo for light mode) */
 [data-md-color-scheme="purdue-light"] .md-header__button.md-logo {
   filter: brightness(0) invert(1);
-  /* White logo for light mode */
 }
