@@ -3,10 +3,11 @@ theme:
   name: material
   features:
     - navigation.instant
-    - navigation.sections
+
   logo: assets/logos/purdue_logo.svg
   font:
     text: Roboto
+    code: Robot Mono
   palette:
     - scheme: purdue-dark
       toggle:
@@ -22,4 +23,6 @@ remote_branch: gh-pages
 
 nav:
   - Home: index.md
+  - Datasheets:
+    - Codec: datasheet1.md
   - About: about.md
