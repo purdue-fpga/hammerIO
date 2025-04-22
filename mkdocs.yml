@@ -21,6 +21,9 @@ extra_css:
   - stylesheets/extra.css
 remote_branch: gh-pages
 
+markdown_extensions:
+  - tables
+
 nav:
   - Home: index.md
   - Datasheets:
