@@ -1,4 +1,4 @@
-# Welcome!
+# DE-10 Lite Peripheral Board Pinout
 
 Below is the pinout table for the peripheral shield.
 
