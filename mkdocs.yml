@@ -23,6 +23,12 @@ remote_branch: gh-pages
 
 markdown_extensions:
   - tables
+  - pymdownx.pathconverter:
+      base_path: ''
+      relative_path: ''
+      absolute: true
+      tags: 'a script img link object embed'
+
 
 nav:
   - Home: index.md

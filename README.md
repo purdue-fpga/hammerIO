@@ -1,6 +1,7 @@
 ### Deploy to GH Pages
 ```
-sudo apt install mkdocs-material ghp-import
+sudo apt install mkdocs-material 
+pip install ghp-import \ mkdocs-material-extensions \ pymdown-extensions
 make
 ```
 
