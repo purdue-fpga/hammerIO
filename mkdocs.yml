@@ -1,4 +1,4 @@
-site_name: DE10-Lite Peripheral Board Documentation
+site_name: DE10-Lite Peripheral Shield Documentation
 theme:
   name: material
   features:
@@ -37,4 +37,5 @@ nav:
     - ADC: adc.md
     - DAC: dac.md
     - Other Peripherals: other.md
+  - Additional Information: info.md
   - About: about.md

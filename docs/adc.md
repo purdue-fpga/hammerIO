@@ -1,4 +1,4 @@
-# MAX11664 ADC
+# Maxim MAX11664 Low-Power 10-Bit ADC
 
 The MAX11664 ADC integrated into the peripheral shield provides high-resolution analog-to-digital conversion, making it ideal for applications requiring precise signal processing. With its 10-bit resolution and sampling rate of up to 500ksps, the MAX11664 ensures accurate and efficient conversion of analog signals into digital data for FPGA-based applications. 
 
@@ -17,6 +17,10 @@ The ADC features dual single-ended analog inputs connected via SMA ports, as wel
   </tr>
 </table>
 
+![ADC Board](assets/images/adc_board.png)
+
+![ADC Schematic](assets/images/adc.png)
+
 
 | Peripheral | DE10-Lite Port |
 |------------|----------------|
@@ -24,3 +28,8 @@ The ADC features dual single-ended analog inputs connected via SMA ports, as wel
 | ADC_CS     | PIN_AA8        |
 | ADC_CHSEL  | PIN_AA9        |
 | ADC_DOUT   | PIN_AB10       |
+
+<!-- insert pdf here -->
+<object data="../assets/datasheets/MAX11664_adc.pdf" type="application/pdf" width="100%" height="800px">
+    <embed src="../assets/datasheets/MAX11664_adc.pdf" type="application/pdf" width="100%" height="800px">
+</object>
