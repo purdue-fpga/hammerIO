@@ -14,7 +14,7 @@ To ensure optimal performance and minimize noise interference, the codec is powe
 
 ![Voltage Regulator](assets/images/voltage-regulator.png)
 
-| Peripheral   | DE10-Lite port |
+| Peripheral  | DE10-Lite Port |
 |-------------|----------------|
 | I2C_SCLK    | PIN_AA14       |
 | I2C_SDAT    | PIN_W12        |
