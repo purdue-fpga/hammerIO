@@ -16,3 +16,5 @@ The DAC features two SMA connectors, each corresponding to one of its output cha
 <object data="../assets/datasheets/AD7303_dac.pdf" type="application/pdf" width="100%" height="800px">
     <embed src="../assets/datasheets/AD7303_dac.pdf" type="application/pdf" width="100%" height="800px">
 </object>
+
+[AD7303 Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/ad7303.pdf)

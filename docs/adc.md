@@ -33,3 +33,5 @@ The ADC features dual single-ended analog inputs connected via SMA ports, as wel
 <object data="../assets/datasheets/MAX11664_adc.pdf" type="application/pdf" width="100%" height="800px">
     <embed src="../assets/datasheets/MAX11664_adc.pdf" type="application/pdf" width="100%" height="800px">
 </object>
+
+[MAX11664 Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/MAX11661-MAX11666.pdf)

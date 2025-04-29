@@ -31,4 +31,4 @@ To ensure optimal performance and minimize noise interference, the codec is powe
     <embed src="../assets/datasheets/SSM2603_codec.pdf" type="application/pdf" width="100%" height="800px">
 </object>
 
-
+[SSM2603 Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/ssm2603.pdf)
