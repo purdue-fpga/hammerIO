@@ -20,7 +20,7 @@
     
     
       
-        <title>DAC - DE10-Lite Peripheral Board Documentation</title>
+        <title>DAC - DE10-Lite Peripheral Shield Documentation</title>
       
     
     
@@ -76,6 +76,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#analog-devices-ad7303-dual-voltage-output-8-bit-dac" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -88,7 +93,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="DE10-Lite Peripheral Board Documentation" class="md-header__button md-logo" aria-label="DE10-Lite Peripheral Board Documentation" data-md-component="logo">
+    <a href=".." title="DE10-Lite Peripheral Shield Documentation" class="md-header__button md-logo" aria-label="DE10-Lite Peripheral Shield Documentation" data-md-component="logo">
       
   <img src="../assets/logos/purdue_logo.svg" alt="logo">
 
@@ -101,7 +106,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            DE10-Lite Peripheral Board Documentation
+            DE10-Lite Peripheral Shield Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -205,12 +210,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="DE10-Lite Peripheral Board Documentation" class="md-nav__button md-logo" aria-label="DE10-Lite Peripheral Board Documentation" data-md-component="logo">
+    <a href=".." title="DE10-Lite Peripheral Shield Documentation" class="md-nav__button md-logo" aria-label="DE10-Lite Peripheral Shield Documentation" data-md-component="logo">
       
   <img src="../assets/logos/purdue_logo.svg" alt="logo">
 
     </a>
-    DE10-Lite Peripheral Board Documentation
+    DE10-Lite Peripheral Shield Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -322,6 +327,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -371,6 +378,25 @@
   
   
     <li class="md-nav__item">
+      <a href="../info/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Additional Information
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../about/" class="md-nav__link">
         
   
@@ -401,6 +427,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -415,9 +443,36 @@
                   
 
 
-  <h1>DAC</h1>
-
-
+<h1 id="analog-devices-ad7303-dual-voltage-output-8-bit-dac">Analog Devices AD7303 Dual Voltage Output 8-Bit DAC</h1>
+<p>The AD7303 DAC integrated into the peripheral shield is a dual-channel, 8-bit voltage-output device designed for precise digital-to-analog conversion. With its rail-to-rail output capability and low power consumption, the AD7303 is ideal for applications requiring efficient signal generation and processing. </p>
+<p>The DAC features two SMA connectors, each corresponding to one of its output channels. These connectors allow users to interface with external devices or measurement equipment seamlessly. The AD7303 operates from a 3.3V GPIO pin and is wired for SPI communication. </p>
+<p><img alt="DAC Schematic" src="../assets/images/dac.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Peripheral</th>
+<th>DE10-Lite port</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SCLK</td>
+<td>PIN_AA7</td>
+</tr>
+<tr>
+<td>DAC_SYNC</td>
+<td>PIN_AA5</td>
+</tr>
+<tr>
+<td>DAC_DIN</td>
+<td>PIN_AA6</td>
+</tr>
+</tbody>
+</table>
+<!-- insert pdf here -->
+<object data="../assets/datasheets/AD7303_dac.pdf" type="application/pdf" width="100%" height="800px">
+    <embed src="../assets/datasheets/AD7303_dac.pdf" type="application/pdf" width="100%" height="800px">
+</object>
 
 
 

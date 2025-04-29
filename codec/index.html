@@ -20,7 +20,7 @@
     
     
       
-        <title>Audio Codec - DE10-Lite Peripheral Board Documentation</title>
+        <title>Audio Codec - DE10-Lite Peripheral Shield Documentation</title>
       
     
     
@@ -93,7 +93,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="DE10-Lite Peripheral Board Documentation" class="md-header__button md-logo" aria-label="DE10-Lite Peripheral Board Documentation" data-md-component="logo">
+    <a href=".." title="DE10-Lite Peripheral Shield Documentation" class="md-header__button md-logo" aria-label="DE10-Lite Peripheral Shield Documentation" data-md-component="logo">
       
   <img src="../assets/logos/purdue_logo.svg" alt="logo">
 
@@ -106,7 +106,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            DE10-Lite Peripheral Board Documentation
+            DE10-Lite Peripheral Shield Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -210,12 +210,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="DE10-Lite Peripheral Board Documentation" class="md-nav__button md-logo" aria-label="DE10-Lite Peripheral Board Documentation" data-md-component="logo">
+    <a href=".." title="DE10-Lite Peripheral Shield Documentation" class="md-nav__button md-logo" aria-label="DE10-Lite Peripheral Shield Documentation" data-md-component="logo">
       
   <img src="../assets/logos/purdue_logo.svg" alt="logo">
 
     </a>
-    DE10-Lite Peripheral Board Documentation
+    DE10-Lite Peripheral Shield Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -378,6 +378,25 @@
   
   
     <li class="md-nav__item">
+      <a href="../info/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Additional Information
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../about/" class="md-nav__link">
         
   
@@ -425,9 +444,62 @@
 
 
 <h1 id="analog-devices-ssm2603-low-power-audio-codec">Analog Devices SSM2603 Low Power Audio Codec</h1>
-<p><img alt="Codec Schematic" src="/assets/images/codec.png" /></p>
-<p>Yaroslav will write this bit probably. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>The SSM2603 audio codec integrated into the peripheral shield is a low-power stereo codec designed for applications requiring audio signal processing. The codec is equipped with three audio jack lines on the board: </p>
+<ul>
+<li><strong>Line In:</strong> For external audio input. </li>
+<li><strong>Line Out:</strong> For audio output to external devices. </li>
+<li><strong>Mic In:</strong> For connecting a microphone. </li>
+</ul>
+<p>Additionally, the codec features an exposed pin for the mute signal, allowing users to control audio output directly. Test points for all codec signals are provided next to the IC, enabling users to connect wires and observe signal behavior during operation. The codec is configured via an I2C interface, which is hard-wired on the PCB. Test points for the I2C signals are also available for monitoring communication. </p>
+<p>To ensure optimal performance and minimize noise interference, the codec is powered through an isolated power line. The shield utilizes the 5V pin on the DE10-Lite board's GPIO header, which is converted to 3.3V using a TLV1117LV3-3 linear regulator, as recommended by the manufacturer. </p>
+<p><img alt="Codec Schematic" src="../assets/images/codec.png" /></p>
+<p><img alt="Voltage Regulator" src="../assets/images/voltage-regulator.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Peripheral</th>
+<th>DE10-Lite Port</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I2C_SCLK</td>
+<td>PIN_AA14</td>
+</tr>
+<tr>
+<td>I2C_SDAT</td>
+<td>PIN_W12</td>
+</tr>
+<tr>
+<td>AUD_XCK</td>
+<td>PIN_W5</td>
+</tr>
+<tr>
+<td>AUD_BCLK</td>
+<td>PIN_W6</td>
+</tr>
+<tr>
+<td>AUD_DACDAT</td>
+<td>PIN_V7</td>
+</tr>
+<tr>
+<td>AUD_DACLRCK</td>
+<td>PIN_V8</td>
+</tr>
+<tr>
+<td>AUD_ADCDAT</td>
+<td>PIN_V9</td>
+</tr>
+<tr>
+<td>AUD_ADCLRCK</td>
+<td>PIN_V10</td>
+</tr>
+</tbody>
+</table>
 <!-- insert pdf here -->
+<object data="../assets/datasheets/SSM2603_codec.pdf" type="application/pdf" width="100%" height="800px">
+    <embed src="../assets/datasheets/SSM2603_codec.pdf" type="application/pdf" width="100%" height="800px">
+</object>
 
 
 

@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../info/">
+        <link rel="prev" href="../other/">
       
+      
+        <link rel="next" href="../about/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>About - DE10-Lite Peripheral Shield Documentation</title>
+        <title>Additional Information - DE10-Lite Peripheral Shield Documentation</title>
       
     
     
@@ -75,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#about" class="md-skip">
+        <a href="#known-issues-and-recommendations" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              About
+              Additional Information
             
           </span>
         </div>
@@ -362,25 +364,6 @@
       
   
   
-  
-    <li class="md-nav__item">
-      <a href="../info/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Additional Information
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -392,7 +375,99 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Additional Information
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Additional Information
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#power-supply-and-current-draw" class="md-nav__link">
+    Power Supply and Current Draw
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clock-source-configuration" class="md-nav__link">
+    Clock Source Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#signal-observation-via-test-points" class="md-nav__link">
+    Signal Observation via Test Points
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jumper-configuration" class="md-nav__link">
+    Jumper Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommendations-for-assembly" class="md-nav__link">
+    Recommendations for Assembly
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parts-list" class="md-nav__link">
+    Parts List
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -401,7 +476,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -426,6 +500,56 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#power-supply-and-current-draw" class="md-nav__link">
+    Power Supply and Current Draw
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clock-source-configuration" class="md-nav__link">
+    Clock Source Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#signal-observation-via-test-points" class="md-nav__link">
+    Signal Observation via Test Points
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jumper-configuration" class="md-nav__link">
+    Jumper Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommendations-for-assembly" class="md-nav__link">
+    Recommendations for Assembly
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parts-list" class="md-nav__link">
+    Parts List
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -439,8 +563,205 @@
                   
 
 
-<h1 id="about">About</h1>
-<p>This is the About page placeholder. i am making a change</p>
+<h1 id="known-issues-and-recommendations">Known Issues and Recommendations</h1>
+<h2 id="power-supply-and-current-draw">Power Supply and Current Draw</h2>
+<p>The total current draw for the DE10-Lite board and the extension shield with all peripherals active at once is estimated at 491.3 mA. This value at peak usage approaches the limit of the voltage regulator's capacity of 500mA. While it is unlikely that users will operate all peripherals simultaneously, given the shield’s primary use in educational settings, users should still exercise caution when using additional expansions, like PMOD. Individual current draw values for each component are summarized below.</p>
+<table>
+<thead>
+<tr>
+<th>Peripheral</th>
+<th>Part Number</th>
+<th>Current Draw while Active (mA)</th>
+<th>Number of Components</th>
+<th>Total Current Draw (mA)</th>
+<th>Justification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LEDs</td>
+<td>150141AS73100</td>
+<td>20</td>
+<td>8</td>
+<td>160</td>
+<td>Datasheet</td>
+</tr>
+<tr>
+<td>ADC</td>
+<td>MAX11664</td>
+<td>1.67</td>
+<td>1</td>
+<td>1.67</td>
+<td>Datasheet</td>
+</tr>
+<tr>
+<td>DAC</td>
+<td>AD7303</td>
+<td>2.3</td>
+<td>1</td>
+<td>0.75</td>
+<td>Datasheet</td>
+</tr>
+<tr>
+<td>Audio Codec (General)</td>
+<td>SSM2603</td>
+<td>19.6</td>
+<td>1</td>
+<td>19.6</td>
+<td>Datasheet</td>
+</tr>
+<tr>
+<td>Audio Codec (Headphone Amplifier)</td>
+<td>SSM2603</td>
+<td>62.5</td>
+<td>1</td>
+<td>62.5</td>
+<td>Datasheet</td>
+</tr>
+<tr>
+<td>Switch Pullup Resistors</td>
+<td>N/A (10kΩ)</td>
+<td>0.33</td>
+<td>8</td>
+<td>2.64</td>
+<td>Ohm’s Law</td>
+</tr>
+<tr>
+<td>LEDs (DE-10 Lite)</td>
+<td>Unknown (330Ω current-limiting resistors)</td>
+<td>3.94</td>
+<td>10</td>
+<td>39.4</td>
+<td>Schematic</td>
+</tr>
+<tr>
+<td>Switch Pullup Resistors (DE-10 Lite)</td>
+<td>N/A (120kΩ)</td>
+<td>0.027</td>
+<td>10</td>
+<td>0.27</td>
+<td>Schematic</td>
+</tr>
+<tr>
+<td>VGA Resistor Network (DE10-Lite)</td>
+<td>N/A (Resistance varies)</td>
+<td>22.28</td>
+<td>1</td>
+<td>22.28</td>
+<td>Schematic</td>
+</tr>
+<tr>
+<td>SDRAM (DE10-Lite)</td>
+<td>IS42S16320D</td>
+<td>180</td>
+<td>1</td>
+<td>180</td>
+<td>Datasheet</td>
+</tr>
+<tr>
+<td>Accelerometer (DE10-Lite)</td>
+<td>ADXL345</td>
+<td>0.14</td>
+<td>1</td>
+<td>0.14</td>
+<td>Datasheet</td>
+</tr>
+<tr>
+<td>FPGA (DE10-Lite)</td>
+<td>10M50DAF484</td>
+<td>0.60</td>
+<td>1</td>
+<td>0.60</td>
+<td>Datasheet</td>
+</tr>
+</tbody>
+</table>
+<h2 id="clock-source-configuration">Clock Source Configuration</h2>
+<p>During testing, it was observed that using multiple clock sources to drive peripherals resulted in unexpected behavior in the Quartus software, including irregular placement of logic gates. To mitigate this issue, users should configure the FPGA to use a single clock source with appropriate clock dividers for different devices. This approach ensures stable and reliable operation of the shield.</p>
+<h2 id="signal-observation-via-test-points">Signal Observation via Test Points</h2>
+<p>The board features multiple test points for signals, including the audio codec signals, I2C and SPI interfaces pins, and intermediate signals from PS/2, DAC and ADC. Users should exercise caution when probing these test points, as improper handling could lead to short circuit, noise interference or signal distortion.</p>
+<h2 id="jumper-configuration">Jumper Configuration</h2>
+<p>Incorrect jumper settings for the ADC channels could result in unexpected input values. Users are encouraged to refer to the jumper configuration instructions and double-check their settings to ensure proper operation.</p>
+<h2 id="recommendations-for-assembly">Recommendations for Assembly</h2>
+<p>During installation, ensure that standoffs are securely tightened to avoid mechanical instability, which could damage the board or affect signal quality.</p>
+<h2 id="parts-list">Parts List</h2>
+<table>
+<thead>
+<tr>
+<th>Peripheral</th>
+<th>Part #</th>
+<th>Quantity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADC</td>
+<td><a href="https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/MAX11664AUB-T/2776904">MAX11664</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td>DAC</td>
+<td><a href="https://www.digikey.com/en/products/detail/analog-devices-inc/AD7303BRMZ-REEL7/760443">AD7303</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td>Audio Codec</td>
+<td><a href="https://www.digikey.com/en/products/detail/analog-devices-inc/SSM2603CPZ-REEL7/1825572">SSM2603</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td>Voltage Regulator</td>
+<td><a href="https://www.digikey.com/en/products/detail/texas-instruments/TLV1117LV33DCYR/2666508">TLV1117LV33</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td>PS/2</td>
+<td><a href="https://www.digikey.com/en/products/detail/kycon-inc/KMDTX-HT-6S-BSC/10246538">KMDTX-HT-6S-BSC</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td>SMA</td>
+<td><a href="https://www.digikey.com/en/products/detail/taoglas-limited/PCB.SMAFRA.HT/5034736">PCB.SMAFRA.HT</a></td>
+<td>5</td>
+</tr>
+<tr>
+<td>Audio Jack</td>
+<td><a href="https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/SJ-3524-SMT-TR-BE/2295987">SJ-3524-SMT-TR</a></td>
+<td>3</td>
+</tr>
+<tr>
+<td>LED</td>
+<td><a href="https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150141AS73100/4489951">150141AS73100</a></td>
+<td>8</td>
+</tr>
+<tr>
+<td>SPDT Switch</td>
+<td><a href="https://www.digikey.com/en/products/detail/analog-devices-inc/SSM2603CPZ-REEL7/1825572">OS102011MS2QN1</a></td>
+<td>8</td>
+</tr>
+<tr>
+<td>Joystick</td>
+<td><a href="https://www.digikey.com/en/products/detail/adafruit-industries-llc/2765/6193582?utm_adgroup=&amp;utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=PMax%20Shopping_Product_Low%20ROAS%20Categories&amp;utm_term=&amp;utm_content=&amp;utm_id=go_cmp-20243063506_adg-_ad-__dev-c_ext-_prd-6193582_sig-Cj0KCQjw3vO3BhCqARIsAEWblcBk-uoutJC3dSpz2AL3nr86i9Bg8ZY9myD4yaY4qsCevREZxLtPdwgaAlnqEALw_wcB&amp;gad_source=1&amp;gclid=Cj0KCQjw3vO3BhCqARIsAEWblcBk-uoutJC3dSpz2AL3nr86i9Bg8ZY9myD4yaY4qsCevREZxLtPdwgaAlnqEALw_wcB">Adafruit 2765</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td>40 Pin Header</td>
+<td><a href="https://www.mouser.com/ProductDetail/SparkFun/PRT-16763?qs=W/MpXkg%252BdQ5xeCq/GKjnlQ%3D%3D&amp;mgh=1&amp;gQT=1">474-PRT-16763</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td>Arduino Header</td>
+<td><a href="https://www.amazon.com/uxcell-Straight-Connector-Arduino-Prototype/dp/B07DK2FXZ9?crid=1C4M14DXTGW0L&amp;dib=eyJ2IjoiMSJ9.zesfsDA9U5NtucXddh7LarAishEP5HTv09WqkczCHOTJrDsA_bt6flhVZdAbOC-Pm5b8IfmV6HLlStlrBppPs0leSWZ0hWMBLc0vsRRO8syV2coDWChEnl9xC8wC_7S5opyFehLodpTJM8UUg6YTi59lbL-EMxSvF98itYIfUiR5cCV24mtHzzDL9OihtxswK2LcoReBmYJ5m8d4iZhRKOvKeYXECJr7i7wnmiHyjLYNwOMTZyq_YWnQ46Fbd85hmiuUOtiN-KnUcjmrGbzX83Y8Bgc2NVk8vtv_47WH5Shh_mhpn7KPBYTroZfShOYDOViDBA3NH4WsVL6WaCrrkvS8EsrNHD098hv_kZ3GH2o.xQp8zv38MMa1wdSZl6OQAS9GpkXyr3fRqkMHCu6PYIM&amp;dib_tag=se&amp;keywords=16mm%2Bheader&amp;qid=1742935262&amp;s=industrial&amp;sprefix=16mm%2Bheader%2Cindustrial%2C96&amp;sr=1-1&amp;th=1">uxcell 16mm-len</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td>Standoff</td>
+<td><a href="https://www.mcmaster.com/93505A103">93505A103</a></td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>All other components were purchased directly through the JLCPCB assembly service.</p>
 
 
 
