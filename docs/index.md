@@ -1,6 +1,6 @@
-# DE-10 Lite Peripheral Shield
+# hammerIO Peripheral Shield
 
-The Peripheral Shield for the DE10-Lite board is a custom-designed hardware solution aimed at expanding the capabilities of the Altera MAX 10 FPGA development platform. Built with versatility and performance in mind, this shield brings together a suite of features that allow users to experiment with a variety of applications, ranging from analog-to-digital conversion to audio signal processing. 
+The hammerIO peripheral shield for the DE10-Lite board is a custom-designed hardware solution aimed at expanding the capabilities of the Altera MAX 10 FPGA development platform. Built with versatility and performance in mind, this shield brings together a suite of features that allow users to experiment with a variety of applications, ranging from analog-to-digital conversion to audio signal processing. 
 
 This shield seamlessly integrates with the DE10-Lite's 2x20 GPIO header, requiring no external power or additional cabling. The onboard peripherals include an ADC, DAC, Audio Codec with isolated power, SMA connectors, a potentiometer joystick, PMOD extensions, and more. With its modular and user-friendly design, the shield is ideal for educational labs, prototyping, and experimenting with FPGA-based solutions. This manual provides an overview of the shield's components and offers step-by-step instructions to help users make the most of this innovative platform. 
 
