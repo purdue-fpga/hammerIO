@@ -1,4 +1,4 @@
-site_name: DE10-Lite Peripheral Shield Documentation
+site_name: hammerIO FPGA Shield Documentation
 theme:
   name: material
   features:
